@@ -16,7 +16,7 @@ const COELogin = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const bodydata = JSON.stringify({email,password})
+      const bodydata = JSON.stringify({email,password});
       const response = await fetch("http://localhost:5001/Coe/Coelogin", {
         method: "POST",
         headers: {
